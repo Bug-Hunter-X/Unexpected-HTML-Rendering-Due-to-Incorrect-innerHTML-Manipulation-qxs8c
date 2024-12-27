@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correct way to manipulate innerHTML, ensuring proper rendering
+    let divContent = document.getElementById('myDiv').innerHTML;
+    divContent += "<p>This text will appear correctly.</p>";
+    document.getElementById('myDiv').innerHTML = divContent; 
+  </script>
+</body>
+</html>
